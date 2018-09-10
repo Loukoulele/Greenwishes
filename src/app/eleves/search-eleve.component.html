@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col s12 m6 offset-m3">
+    <div class="card">
+      <div class="card-content">
+        <div class="input-field">
+          <input #searchBox (keyup)="search(searchBox.value)"
+            placeholder="Rechercher un élève"/>
+        </div>
+
+        <div class="collection">
+          <a *ngFor="let eleve of eleves$ | async"
+            (click)="gotoDetail(eleve)" class="collection-item">
+            {{ eleve.prenom }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

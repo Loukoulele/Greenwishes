@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>GW</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="https://insiti.com/system/logos/3146/big_square/185348_185515118178656_6304693_n.jpg" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./app/eleves/list-eleve.component.css">
+    <link rel="stylesheet" href="./app/eleves/detail-eleve.component.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('dist/main.js').catch(function(err){ console.error(err); });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  </head>
+
+  <body>
+    <classroom-app>Loading AppComponent content here ...</classroom-app>
+  </body>
+</html>
